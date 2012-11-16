@@ -5,4 +5,12 @@
 # overrides:
 #   - rtt
 #     branch: test
-#  
+#
+#
+#overrides:
+#  - base/types/orogen:
+#    patches:
+#      $AUTOPROJ_SOURCE_DIR/autoproj/remotes/rtems/base_orogen_types.patch
+#  - base/types:
+#    patches:
+      

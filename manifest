@@ -7,11 +7,13 @@ package_sets:
    - gitorious: rock-toolchain/package_set
    - gitorious: rock/package_set
    - gitorious: rock-tutorials/package_set
+   - gitorious: goldhoorns-sandbox/rtems-package_set
 
 # Layout. Note that the rock.base and orocos.toolchain sets are
 # imported by other rock sets.
 layout:
    - rock.base
    - rock.toolchain
-   - gui/vizkit
+   - rtems
+#   - gui/vizkit
 #  - rock.tutorials    # Uncomment to build all tutorials  
