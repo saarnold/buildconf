@@ -15,5 +15,7 @@ layout:
    - rock.base
    - rock.toolchain
    - rtems
-#   - gui/vizkit
+   - tutorials/orogen/message_producer
+#   - tutorials/orogen/message_consumer
+   #   - gui/vizkit
 #  - rock.tutorials    # Uncomment to build all tutorials  
