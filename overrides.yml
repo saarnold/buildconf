@@ -16,20 +16,16 @@ overrides:
 #     branch: rtems
 
   - orogen:
-    url: git@gitorious.org:~goldhoorn/orocos-toolchain/goldhoorns-orogen.git
     branch: rtems
 
   - rtt:
-    url: git@gitorious.org:~goldhoorn/orocos-toolchain/rtems-rtt.git
     branch: rtems
   
   - utilmm:
-    url: git@gitorious.org:~goldhoorn/orocos-toolchain/goldhoorns-utilmm.git
-    branch: master
+    branch: rtems 
 
   - typelib:
-    url: git@gitorious.org:~goldhoorn/orocos-toolchain/goldhoorns-typelib.git
-    branch: master
+    branch: rtems 
   
   - base/types:
     branch: rtems
