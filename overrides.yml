@@ -25,9 +25,11 @@ overrides:
   
   - utilmm:
     url: git@gitorious.org:~goldhoorn/orocos-toolchain/goldhoorns-utilmm.git
+    branch: master
 
   - typelib:
     url: git@gitorious.org:~goldhoorn/orocos-toolchain/goldhoorns-typelib.git
+    branch: master
   
   - base/types:
     branch: rtems
