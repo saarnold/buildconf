@@ -15,25 +15,25 @@ overrides:
 #     url: git@gitorious.org:~goldhoorn/orocos-toolchain/orocos-autoproj.git
 #     branch: rtems
 
-  - orogen
+  - orogen:
     url: git@gitorious.org:~goldhoorn/orocos-toolchain/goldhoorns-orogen.git
     branch: rtems
 
-  - rtt
+  - rtt:
     url: git@gitorious.org:~goldhoorn/orocos-toolchain/rtems-rtt.git
     branch: rtems
   
-  - utilmm
+  - utilmm:
     url: git@gitorious.org:~goldhoorn/orocos-toolchain/goldhoorns-utilmm.git
 
-  - typelib
+  - typelib:
     url: git@gitorious.org:~goldhoorn/orocos-toolchain/goldhoorns-typelib.git
   
-  - base/types
+  - base/types:
     branch: rtems
 
-  - base/orogen/types
+  - base/orogen/types:
     branch: rtems
 
-  - base/types_ruby
+  - base/types_ruby:
     branch: rtems
