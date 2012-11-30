@@ -7,10 +7,33 @@
 #     branch: test
 #
 #
-#overrides:
-#  - base/types/orogen:
-#    patches:
-#      $AUTOPROJ_SOURCE_DIR/autoproj/remotes/rtems/base_orogen_types.patch
-#  - base/types:
-#    patches:
-      
+overrides:
+#   - rock.base:
+#     branch: rtems
+#   
+#   - orocos.toolchain:
+#     url: git@gitorious.org:~goldhoorn/orocos-toolchain/orocos-autoproj.git
+#     branch: rtems
+
+  - orogen
+    url: git@gitorious.org:~goldhoorn/orocos-toolchain/goldhoorns-orogen.git
+    branch: rtems
+
+  - rtt
+    url: git@gitorious.org:~goldhoorn/orocos-toolchain/rtems-rtt.git
+    branch: rtems
+  
+  - utilmm
+    url: git@gitorious.org:~goldhoorn/orocos-toolchain/goldhoorns-utilmm.git
+
+  - typelib
+    url: git@gitorious.org:~goldhoorn/orocos-toolchain/goldhoorns-typelib.git
+  
+  - base/types
+    branch: rtems
+
+  - base/orogen/types
+    branch: rtems
+
+  - base/types_ruby
+    branch: rtems

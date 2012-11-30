@@ -4,10 +4,16 @@
 #
 
 package_sets:
+   - gitorious: ~goldhoorn/orocos-toolchain/orocos-autoproj
+     branch: rtems
+   - gitorious: rock-base/package_set
+     branch: rtems
    - gitorious: rock-toolchain/package_set
    - gitorious: rock/package_set
    - gitorious: rock-tutorials/package_set
    - gitorious: goldhoorns-sandbox/rtems-package_set
+   #- spacegit:  crex/package_set
+
 
 # Layout. Note that the rock.base and orocos.toolchain sets are
 # imported by other rock sets.
@@ -16,6 +22,7 @@ layout:
    - rock.toolchain
    - rtems
    - tutorials/orogen/message_producer
+   #- crex/crex_monster
 #   - tutorials/orogen/message_consumer
    #   - gui/vizkit
 #  - rock.tutorials    # Uncomment to build all tutorials  

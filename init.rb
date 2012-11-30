@@ -25,6 +25,26 @@
 
 require 'autoproj/gitorious'
 Autoproj.gitorious_server_configuration('GITORIOUS', 'gitorious.org')
+Autoproj.gitorious_server_configuration('SPACEGIT', 'spacegit.dfki.uni-bremen.de',:fallback_to_http => false)
+
+disable_imports_from 'rock.toolchain'
+
+if not ENV['HOSTBUILD'] == "true" 
+    host_exclude = "tools/service_discovery","rtt","logger","tools/logger"
+    Autoproj.change_option 'rtt_target', 'rtems' #TODO
+    Autoproj.change_option 'target', 'i386-rtems' #TODO
+    Autoproj.change_option 'bsp', 'pc486' #TODO
+else
+    host_exclude = "external/binutils","external/gcc","external/gdb","external/rtems","external/newlib","external/boost","external/omniorb","external/xerces","external/libxml"
+    Autoproj.change_option 'rtt_target', 'gnulinux' #TODO
+    Autoproj.change_option 'target', 'x86_64-linux-gnu' #TODO
+end
+
+#workaroung for buggy cmake
+Autoproj.env_set "BSP",user_config('bsp')
+Autoproj.env_set "TARGET",user_config('target')
+Autoproj.env_set "RTEMS_INSTALL_DIR",File.join(Autoproj.root_dir,Autoproj.prefix)
+
 
 require './autoproj/rock'
 rock_autoproj_init
