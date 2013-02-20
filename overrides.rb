@@ -41,8 +41,8 @@ Autobuild::Package.each do |pkg_name, pkg|
             pkg.define("BSP",user_config('bsp'))
             pkg.define("TARGET",user_config('target'))
             #pkg.preload_script = File.join(Autoproj.root_dir,"base","types","cmake","FindRTEMS.cmake")
-            pkg.define("CMAKE_TOOLCHAIN_FILE",File.join(Autoproj.root_dir,"base","types","cmake","FindRTEMS.cmake"))
-            pkg.define("TOOLCHAIN",File.join(Autoproj.root_dir,"base","types","cmake","FindRTEMS.cmake"))
+            pkg.define("CMAKE_TOOLCHAIN_FILE",File.join(Autoproj.root_dir,"base","types","cmake","uclinux.cmake"))
+            pkg.define("TOOLCHAIN",File.join(Autoproj.root_dir,"base","types","cmake","uclinux.cmake"))
             pkg.define("RTEMS_INSTALL_DIR",File.join(Autoproj.root_dir,Autoproj.prefix))
             foo="-L#{File.join(Autoproj.root_dir,Autoproj.prefix,"lib")} -DRTT_STATIC"
             pkg.define("ADD_CFLAGS",foo)
