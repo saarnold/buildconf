@@ -28,9 +28,9 @@ do
 done
 
 if [ "$ANSWER" = "y" ]; then
-    ruby autoproj_bootstrap $@ git git://gitorious.org/goldhoorns-sandbox/rtems-buildconf.git push_to=git@gitorious.org:goldhoorns-sandbox/rtems-buildconf.git branch=master
+    ruby autoproj_bootstrap $@ git git://gitorious.org/rock/buildconf.git push_to=git@gitorious.org:rock/buildconf.git branch=uclinux
 else
-    ruby autoproj_bootstrap $@ git https://git.gitorious.org/goldhoorns-sandbox/rtems-buildconf.git push_to=git@gitorious.org:goldhoorns-sandbox/rtems-buildconf.git branch=master
+    ruby autoproj_bootstrap $@ git https://git.gitorious.org/rock/buildconf.git push_to=git@gitorious.org:rock/buildconf.git branch=uclinux
 fi
 
 if test "x$@" != "xlocaldev"; then
