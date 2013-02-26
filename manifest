@@ -26,3 +26,10 @@ layout:
 #   - tutorials/orogen/message_consumer
    #   - gui/vizkit
 #  - rock.tutorials    # Uncomment to build all tutorials  
+#
+exclude_packages:
+   - tools/logger
+   - tools/service_discovery
+
+ignore_packages:
+   - base/orogen/types
