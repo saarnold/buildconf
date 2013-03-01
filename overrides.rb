@@ -15,7 +15,7 @@ host_exclude = Array.new
 
 #Autoproj.env_set 'HOSTSYSTEM', 'x86_64-linux-gnu'
 
-
+Autoproj.env_add "RUBYLIB",File.join(Autoproj.root_dir,"install","x86_64-linux-gnu","lib","ruby","1.9.1","x86_64-linux")
 Autoproj.env_add "RUBYLIB",File.join(Autoproj.root_dir,"install","x86_64-linux-gnu","lib","ruby","1.9.1")
 Autoproj.env_add "RUBYLIB",File.join(Autoproj.root_dir,"install","x86_64-linux-gnu","lib","ruby","1.8","x86_64-linux")
 Autoproj.env_add "PATH",File.join(Autoproj.root_dir,"install","x86_64-linux-gnu","bin")
@@ -38,7 +38,7 @@ end
 Autobuild::Package.each do |pkg_name, pkg|
 #Autoproj.manifest.each_package do |pkg|
     pkg.builddir = "build-#{Autoproj.user_config('target')}" if pkg.kind_of?(Autobuild::Configurable)
-    if not ENV['HOSTBUILD'] == "true"
+    if not user_config('HOSTBUILD') == "true"
         if pkg.kind_of?(Autobuild::CMake) and pkg_name != "rtt"
             #pkg.define("BSP",user_config('bsp'))
             pkg.define("TARGET",user_config('target'))
@@ -56,6 +56,7 @@ Autobuild::Package.each do |pkg_name, pkg|
             pkg.define("ADD_CFLAGS",foo)
             pkg.define("CORBA_IMPLEMENTATION","OMNIORB")
             pkg.define("ENABLE_CORBA","ON")
+            pkg.define("ENABLE_MQ","OFF")
             pkg.define("OS_NO_ASM","ON")
 #            pkg.define("PLUGINS_ENABLE","OFF")
             #pkg.define("BSP",user_config('bsp'))

@@ -29,7 +29,17 @@ Autoproj.gitorious_server_configuration('SPACEGIT', 'spacegit.dfki.uni-bremen.de
 
 disable_imports_from 'rock.toolchain'
 
-if not ENV['HOSTBUILD'] == "true" 
+if ENV['HOSTBUILD'] == "true"
+    Autoproj.change_option "HOSTBUILD","true"
+end
+if ENV['HOSTBUILD'] == "false"
+    Autoproj.change_option "HOSTBUILD","false"
+end
+    
+ENV['HOSTBUILD'] = user_config('HOSTBUILD')
+
+if not user_config('HOSTBUILD') == "true" 
+    STDOUT.puts "TARGET Build"
     host_exclude = "tools/service_discovery","rtt","logger","tools/logger"
     Autoproj.change_option 'rtt_target', 'uclinux'
     Autoproj.change_option 'target', 'microblaze-unknown-linux-gnu' 
@@ -38,6 +48,7 @@ if not ENV['HOSTBUILD'] == "true"
     #Autoproj.change_option 'target', 'microblaze-none-uclinux' 
 #    Autoproj.change_option 'bsp', 'pc486' #TODO
 else
+    STDOUT.puts "HOST-Build"
     host_exclude = "external/binutils","external/gcc","external/gdb","external/rtems","external/newlib","external/boost","external/omniorb","external/xerces","external/libxml"
     Autoproj.change_option 'rtt_target', 'gnulinux' 
     Autoproj.change_option 'target', 'x86_64-linux-gnu' 
