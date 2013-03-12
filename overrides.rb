@@ -37,6 +37,13 @@ end
 
 Autobuild::Package.each do |pkg_name, pkg|
 #Autoproj.manifest.each_package do |pkg|
+    if pkg_name == "external/sisl" and user_config('HOSTBUILD') == "false"
+        pkg.define "BUILD_SHARED_LIBS", "OFF"
+    end
+    if pkg_name == "tools/orocos.rb" and user_config('HOSTBUILD') == "false"
+        pkg.disable
+    end
+
     pkg.builddir = "build-#{Autoproj.user_config('target')}" if pkg.kind_of?(Autobuild::Configurable)
     if not user_config('HOSTBUILD') == "true"
         if pkg.kind_of?(Autobuild::CMake) and pkg_name != "rtt"

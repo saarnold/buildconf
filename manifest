@@ -31,5 +31,3 @@ exclude_packages:
    - tools/logger
    - tools/service_discovery
 
-ignore_packages:
-   - base/orogen/types
