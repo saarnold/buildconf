@@ -1,0 +1,714 @@
+---
+- pkg_set:github:/orocos-toolchain/autoproj.git:
+    branch: stable
+    tag: rock-14.08
+    commit:
+- pkg_set:github:/rock-core/package_set.git:
+    branch: stable
+    tag: rock-14.08
+    commit:
+- pkg_set:github:/rock-core/rock-package_set.git:
+    branch: stable
+    tag: rock-14.08
+    commit:
+- pkg_set:gitorious:/rock-tutorials/package_set.git:
+    branch: master
+    tag: 
+    commit: 265919524233b7b155508e51fec3e2916dc32936
+- base/cmake:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- base/console_bridge:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- base/numeric:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- base/orogen/interfaces:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- base/orogen/std:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- base/orogen/types:
+    branch: stable
+    tag: rock-14.08
+    commit:
+- base/scripts:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- base/templates/bundle:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- base/templates/cmake_lib:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- base/templates/cmake_vizkit_widget:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- base/templates/doc:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- base/templates/ruby_lib:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- base/templates/vizkit:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- base/types:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- bundles/rock:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- bundles/rock_ugv_nav:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- bundles/tutorials:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- bundles/tutorials_scripts:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- control/joint_dispatcher:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- control/kdl:
+    branch: master
+    tag: 
+    commit: 264ef3f7c4ad553e7a391e0f104fda1ec5051925
+- control/kdl_conversions:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- control/kdl_parser:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- control/motor_controller:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- control/orogen/auv_control:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- control/orogen/auv_rel_pos_controller:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- control/orogen/joint_dispatcher:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- control/orogen/kdl:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- control/orogen/motor_controller:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- control/orogen/skid4_control:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- control/orogen/trajectory_follower:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- control/orogen/waypoint_navigation:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- control/reflexxes:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- control/trajectory_follower:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- control/urdfdom:
+    branch: master
+    tag: 
+    commit: 771cde3284c244142250b511bfcaa0bc6922bbfa
+- control/urdfdom_headers:
+    branch: master
+    tag: 
+    commit: bedfc524fd3c81956d03eddd32de968a52537a82
+- control/waypoint_navigation:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- data_processing/openann:
+    branch: master
+    tag: 
+    commit: 21216e3af0ed8165f752cb6c797a5985f8b10633
+- data_processing/orogen/statistics:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- data_processing/orogen/type_to_vector:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- data_processing/type_to_vector:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/actuator_dispatcher:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/aggregator:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/aravis:
+    branch: master
+    tag: ARAVIS_0_3_6
+    commit: 
+- drivers/aria:
+    mode: 1
+    no_subdirectory: false
+    archive_dir: 
+    url: http://rock-robotics.org/archives/ARIA-2.7.5.2.tgz
+- drivers/base_schilling:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/camera_firewire:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/camera_interface:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/camera_prosilica:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/camera_usb:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/canbus:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/controldev:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/dvl_teledyne:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/dynamixel:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/fog_kvh:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/freenect:
+    branch: master
+    tag: 
+    commit: 95ae970786fd52b1a4191ba12e0084fcf8b549b5
+- drivers/hokuyo:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/iCharger:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/iodrivers_base:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/laser_filter:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/laserscanner_sick:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/mb500:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/orogen/aggregator:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/orogen/aria:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/orogen/camera_base:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/orogen/camera_firewire:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/orogen/camera_prosilica:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/orogen/camera_usb:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/orogen/camera_v4l:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/orogen/canbus:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/orogen/controldev:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/orogen/dvl_teledyne:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/orogen/dynamixel:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/orogen/fog_kvh:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/orogen/gps:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/orogen/hokuyo:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/orogen/iodrivers_base:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/orogen/laser_filter:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/orogen/laserscanner_sick:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/orogen/parport:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/orogen/ptu_directedperception:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/orogen/qualisys:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/orogen/servo_dynamixel:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/orogen/sonar_tritech:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/orogen/taskmon:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/orogen/transformer:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/orogen/vicon:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/orogen/video_streamer_vlc:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/orogen/wifimon:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/orogen/xsens_imu:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/parport:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/phidgets:
+    mode: 1
+    no_subdirectory: false
+    archive_dir: 
+    url: http://www.phidgets.com/downloads/libraries/libphidget_2.1.8.20130320.tar.gz
+- drivers/ptu_directedperception:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/qualisys:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/sonar_tritech:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/transformer:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/velodyne_lidar:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/vicon:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/video_capture_vlc:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/video_streamer_vlc:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- drivers/xsens_imu:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- external/aruco:
+    mode: 1
+    no_subdirectory: false
+    archive_dir: 
+    url: http://downloads.sourceforge.net/project/aruco/1.2.5/aruco-1.2.5.tgz
+- external/cminpack:
+    mode: 1
+    no_subdirectory: false
+    archive_dir: 
+    url: http://devernay.free.fr/hacks/cminpack/cminpack-1.1.3.tar.gz
+- external/gexf:
+    mode: 1
+    no_subdirectory: false
+    archive_dir: 
+    url: https://launchpad.net/libgexf/unstable/0.1.2/+download/libgexf-src-0.1.2.tar.gz
+- external/lemon:
+    mode: 1
+    no_subdirectory: false
+    archive_dir: 
+    url: http://lemon.cs.elte.hu/pub/sources/lemon-1.3.tar.gz
+- external/libply:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- external/ompl:
+    mode: 1
+    no_subdirectory: false
+    archive_dir: 
+    url: https://bitbucket.org/ompl/ompl/downloads/ompl-0.14.0-Source.tar.gz
+- external/sbpl:
+    branch: master
+    tag: 1.2.0
+    commit: 
+- external/sisl:
+    mode: 1
+    no_subdirectory: false
+    archive_dir: 
+    url: http://www.sintef.no/upload/IKT/9011/geometri/sisl/sisl-4.5.0.tar.gz
+- external/snap:
+    branch: master
+    tag: 
+    commit: daa1eca9d924f3577b23882d781a48a0bc09cff7
+- external/yaml-cpp:
+    mode: 1
+    no_subdirectory: false
+    archive_dir: 
+    url: http://yaml-cpp.googlecode.com/files/yaml-cpp-0.3.0.tar.gz
+- gui/control_ui:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- gui/robot_model:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- gui/rock_widget_collection:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- gui/vizkit:
+    branch: stable
+    tag: rock-14.08
+    commit:
+- gui/vizkit3d:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- image_processing/frame_helper:
+    branch: stable
+    tag: rock-14.08
+    commit:
+- image_processing/jpeg_conversion:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- image_processing/libelas:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- image_processing/orogen/image_preprocessing:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- image_processing/orogen/stereo:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- image_processing/stereo:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- orogen:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- planning/corridor_navigation:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- planning/corridor_planner:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- planning/nav_graph_search:
+    branch: stable
+    tag: rock-14.08
+    commit:
+- planning/orogen/corridor_navigation:
+    branch: stable
+    tag: rock-14.08
+    commit:
+- planning/orogen/corridor_planner:
+    branch: stable
+    tag: rock-14.08
+    commit:
+- planning/vfh_star:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- rtt:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- rtt_typelib:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- simulation/imumodel:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- simulation/orogen/imumodel:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- slam/envire:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- slam/flann:
+    mode: 3
+    no_subdirectory: false
+    archive_dir: flann-1.8.4-src
+    url: http://people.cs.ubc.ca/~mariusm/uploads/FLANN/flann-1.8.4-src.zip
+- slam/g2o:
+    revision: 54
+- slam/graph_slam:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- slam/hogman:
+    revision: 21
+- slam/mtk:
+    revision: 26
+- slam/octomap:
+    branch: master
+    tag: v1.6.6
+    commit: 
+- slam/odometry:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- slam/orogen/envire:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- slam/orogen/graph_slam:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- slam/orogen/odometry:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- slam/orogen/orientation_estimator:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- slam/orogen/tilt_scan:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- slam/pcl:
+    mode: 1
+    no_subdirectory: false
+    archive_dir: 
+    url: https://github.com/PointCloudLibrary/pcl/archive/pcl-1.7.1.tar.gz
+- slam/pose_ekf:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- slam/quater_ikf:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- slam/quater_ukf:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- tools/log_tools:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- tools/logger:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- tools/metaruby:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- tools/orocos.rb:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- tools/pocolog:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- tools/pocolog_cpp:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- tools/roby:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- tools/rubigen:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- tools/service_discovery:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- tools/syskit:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- tutorials/designer_widget_tutorial:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- tutorials/message_driver:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- tutorials/orogen/message_consumer:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- tutorials/orogen/message_producer:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- tutorials/orogen/rock_tutorial:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- tutorials/orogen/tut_brownian:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- tutorials/orogen/tut_deployment:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- tutorials/orogen/tut_follower:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- tutorials/orogen/tut_sensor:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- tutorials/rock_tutorial:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- tutorials/vizkit3d_plugin_tutorial:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- typelib:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- utilmm:
+    branch: stable
+    tag: rock-14.08
+    commit: 
+- utilrb:
+    branch: stable
+    tag: rock-14.08
+    commit: 
