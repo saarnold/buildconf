@@ -1,18 +1,23 @@
 ---
 - pkg_set:github:/orocos-toolchain/autoproj.git:
     tag: rock-15.05
+    branch: rock-15.05
     commit: 
 - pkg_set:github:/rock-core/package_set.git:
     tag: rock-15.05
+    branch: rock-15.05
     commit: 
 - pkg_set:github:/rock-core/rock-package_set.git:
     tag: rock-15.05
+    branch: rock-15.05
     commit: 
 - pkg_set:github:/rock-simulation/simulation-package_set.git:
     tag: rock-15.05
+    branch: rock-15.05
     commit: 
 - pkg_set:github:/rock-tutorials/tutorials-package_set.git:
     tag: rock-15.05
+    branch: rock-15.05
     commit: 
 - base/admin_scripts:
     tag: rock-15.05
@@ -30,7 +35,7 @@
     tag: rock-14.08
     commit: 
 - base/orogen/interfaces:
-    branch: rock-14.08
+    branch: stable 
     commit: 
 - base/orogen/std:
     tag: rock-15.05
@@ -51,7 +56,7 @@
     tag: rock-14.08
     commit: 
 - base/templates/doc:
-    branch: rock-14.08
+    branch: stable 
     commit: 
 - base/templates/ruby_lib:
     tag: rock-14.08
@@ -72,10 +77,10 @@
     tag: rock-14.08
     commit: 
 - bundles/tutorials:
-    branch: rock-14.08
+    branch: stable 
     commit: 
 - bundles/tutorials_scripts:
-    branch: rock-14.08
+    branch: stable 
     commit: 
 - control/hysteresis_model:
     tag: rock-15.05
@@ -862,6 +867,7 @@
     commit: 
 - tools/autoproj:
     tag: rock-15.05
+    branch: rock-15.05
     commit: 
 - tools/class_loader:
     branch: indigo-devel
