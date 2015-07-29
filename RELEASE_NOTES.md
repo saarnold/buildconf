@@ -1,6 +1,6 @@
 ---
-title: Release Notes for rock-15.05
-sort_info: 15.05
+title: Release Notes for rock-15.05.1
+sort_info: 15.05.1
 ---
 
 <script type="text/javascript">
@@ -18,6 +18,12 @@ $(document).ready(function () {
 
 New stuff
 ---------
+Created 15.05.1 release, since gitorious is shut down
+Unfourtnatly a few packages had to be removed in this sub-release that
+was present in rock-15.05.
+
+This affects at mose base/orogen/interfaces
+all core-packages that depend on this got updated in this sub-release.
 
 Obsoleted package and functionality
 -----------------------------------

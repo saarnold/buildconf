@@ -4,7 +4,7 @@
     branch: rock-15.05
     commit: 
 - pkg_set:github:/rock-core/package_set.git:
-    tag: rock-15.05
+    tag: rock-15.05.1
     branch: rock-15.05
     commit: 
 - pkg_set:github:/rock-core/rock-package_set.git:
@@ -16,7 +16,7 @@
     branch: rock-15.05
     commit: 
 - pkg_set:github:/rock-tutorials/tutorials-package_set.git:
-    tag: rock-15.05
+    tag: rock-15.05.1
     branch: rock-15.05
     commit: 
 - base/admin_scripts:
@@ -307,7 +307,7 @@
     tag: rock-14.08
     commit: 
 - drivers/orogen/dynamixel:
-    tag: rock-14.08
+    tag: rock-15.05.1
     commit: 
 - drivers/orogen/fog_kvh:
     tag: rock-15.05
@@ -316,7 +316,7 @@
     tag: rock-14.08
     commit: 
 - drivers/orogen/hokuyo:
-    tag: rock-15.05
+    tag: rock-15.05.1
     commit: 
 - drivers/orogen/imu_imar:
     tag: rock-15.05
