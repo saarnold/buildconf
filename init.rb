@@ -29,3 +29,7 @@ Autoproj.gitorious_server_configuration('GITHUB', 'github.com', :http_url => 'ht
 
 Autoproj.env_inherit 'CMAKE_PREFIX_PATH'
 
+castxml = find_executable 'castxml'
+if castxml
+    Autobuild.env_set 'TYPELIB_CXX_LOADER', 'castxml'
+end
